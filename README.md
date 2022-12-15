@@ -1,2 +1,2 @@
 # Algorithmica
-Daily practise that I do!
+Daily practise
