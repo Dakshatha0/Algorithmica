@@ -2,8 +2,8 @@
 using namespace std;
 int getHypotenuse(int s1,int s2){
     int hypotenuse;
-    hypotenuse = s1*s1 + s2*s2;
-    return sqrt(hypotenuse);
+    hypotenuse = sqrt(s1*s1 + s2*s2);
+    return hypotenuse;
 }
 int main(){
     int side1,side2;
