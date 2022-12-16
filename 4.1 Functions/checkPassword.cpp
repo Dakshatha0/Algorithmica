@@ -13,9 +13,8 @@ bool checkPassword(string password){
             lowerCaseCount++;
         }
     }
-    if(password.length() >= 8 && upperCaseCount > 0 && digitCount > 0 && lowerCaseCount > 0){
+    if(password.length() >= 8 && upperCaseCount > 0 && digitCount > 0 && lowerCaseCount > 0)
             return true;
-    }
     return false;
 }
 int main(){
