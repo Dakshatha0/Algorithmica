@@ -14,7 +14,7 @@ int nextPrime(int n)
     int m = n + 1;
     while (m > 0)
     {
-        if (isPrime(m) == true)
+        if (isPrime(m))
             break;
         else
             m++;
