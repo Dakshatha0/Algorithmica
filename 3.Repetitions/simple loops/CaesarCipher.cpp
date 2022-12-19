@@ -28,9 +28,6 @@ int main(){
             str[i] = str[i] + 3;
             cout << str[i];
         }
-        else{
-            cout << " ";
-        }
     }
     return 0;
 }
