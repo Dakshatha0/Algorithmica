@@ -2,13 +2,8 @@
 using namespace std;
 bool isInteger(string s){
     for(int i = 0; i < s.size(); i++){
-        if(s[0] == '+' || s[0] == '-' || isdigit(s[0]) && isdigit(s[i+1]) == true)
-        {
+        if(s[0] == '+' || s[0] == '-' || isdigit(s[0]) && isdigit(s[i+1]))
             return true;
-        }
-        else if(isalpha(s[i])){
-            return false;
-        }
     }
     return false;
 }
