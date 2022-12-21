@@ -1,16 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 bool isInteger(string s){
-    for(int i = 0; i < s.size()-1; i++){
-
-        if((s[0] == '+' || s[0] == '-' || isdigit(s[0])) && isdigit(s[i+1]) == true)
+    for(int i = 0; i < s.size(); i++){
+        if(s[0] == '+' || s[0] == '-' || isdigit(s[0]) && isdigit(s[i+1]) == true)
         {
             return true;
         }
-        else{
+        else if(isalpha(s[i])){
             return false;
         }
     }
+    return false;
 }
 int main(){
     string str;
