@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-    int cost;
+    double cost;
     cout << "enter: ";
     cin >> cost;
-    double tax = (18/100)*cost;
-    double tip = (5/100)*cost;
+    double tax = ((18*cost)/100);
+    double tip = ((5*cost)/100);
     cout << tax << " " << tip << " " << tax + tip << endl;
     return 0;
 }
