@@ -4,14 +4,16 @@ int main(){
     int decimal;
     cout << "enter: ";
     cin >> decimal;
+    int convert;
+    string res = " ";
     while(decimal > 0){
-        if(decimal % 2 == 0){
-            cout << "0";
-        }
-        else{
-            cout << "1";
-        }
+        convert = decimal % 2;
+        res += to_string(convert);
         decimal /= 2;
     }
+    for(int i = res.length()-1; i >= 0; i--){
+        cout << res[i];
+    }
+    cout << endl;
     return 0;
 }
