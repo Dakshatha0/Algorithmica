@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 string reverseWords(string s){
-    string res;
+    string res = " ";
     int i = 0;
     while(i < s.length()){
         while(i < s.length() && s[i] == ' ') i++;
@@ -18,7 +18,7 @@ string reverseWords(string s){
 int main(){
     string str;
     cout << "enter: ";
-    cin >> str;
+    getline(cin,str);
     cout << reverseWords(str);
     return 0;
 }

@@ -7,6 +7,6 @@ int main(){
     string str;
     cout << "enter: ";
     cin >> str;
-
+    cout << removeMysteryLength(str);
     return 0;
 }
