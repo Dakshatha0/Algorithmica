@@ -5,7 +5,7 @@ using namespace std;
 int main(){
     string filename;
     fstream fileC;
-    int count = 0;
+    int count = 1;
     fileC.open("headOfFile.txt");
     if(!fileC.is_open())
         return -1;
