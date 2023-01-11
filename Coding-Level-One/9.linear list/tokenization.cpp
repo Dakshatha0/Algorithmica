@@ -6,11 +6,9 @@ vector<string> tokenize(string s){
     int l = s.length();
     for(auto i = 0; i < l; i++){
         if(isdigit(s[i])){
-            res += i;
-            continue;
-            if(!isdigit(i)) break;
+            res += s[i];
+            if(!isdigit(s[i])) break;
             ans.push_back(res);
-            res.clear();
         }
         
     }
